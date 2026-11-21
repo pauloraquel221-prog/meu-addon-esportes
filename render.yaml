@@ -1,17 +1,12 @@
-# Render.com deployment configuration
-# Render reads this file to know how to build and run the service.
-# Docs: https://render.com/docs/render-yaml
-
 services:
   - type: web
-    name: nuvio-live-sports
+    name: futufctv
     env: docker
-    plan: free          # Free tier - no credit card needed
-    region: oregon      # US West - closest to most CDNs for Streamed.pk
+    plan: free
+    region: oregon
 
-    # Environment variables
     envVars:
       - key: PORT
-        value: 7000     # Render's internal port (Render routes HTTPS to this port)
+        value: 7000
       - key: NODE_ENV
         value: production

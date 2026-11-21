@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="color-scheme" content="dark light">
   <meta name="theme-color" content="#0a0a0c">
-  <title>Nuvio Live Sports | Setup</title>
+  <title>FUTUFCTV | Setup</title>
   <script id="theme-init">try{var t=localStorage.getItem('nuvio-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch(e){}try{if(localStorage.getItem('nuvio-config-mode')==='wizard')document.documentElement.setAttribute('data-mode','wizard')}catch(e){}try{if(localStorage.getItem('nuvio-sidebar')==='collapsed')document.documentElement.setAttribute('data-sidebar','collapsed')}catch(e){}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/ui.css">
   <style>
-    /* Nuvio Live Sports | Setup console. Built on the Nuvio Live Sports design system:
+    /* FUTUFCTV | Setup console. Built on the FUTUFCTV design system:
        solid surfaces, solid focus ring, no gradients, no emoji as icons.
        Layout: top bar, step sidebar, numbered cards, progress and install rail.
        Below 1180px the sidebar becomes a sticky step bar and an install bar sticks to the bottom. */
@@ -227,7 +227,7 @@
     <button type="button" class="icon-btn nav-toggle desktop-only" id="navToggle" aria-controls="sidebar" aria-expanded="true" aria-label="Close navigation">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
     </button>
-    <a class="brand" href="/" aria-label="Nuvio Live Sports home"><img src="/logo.png" alt=""><span>Nuvio Live Sports</span></a>
+    <a class="brand" href="/" aria-label="FUTUFCTV home"><img src="/logo.png" alt=""><span>FUTUFCTV</span></a>
     <nav class="topnav" aria-label="Site">
       <a href="/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h5v-6h4v6h5V10"/></svg><span class="nav-label">Home</span></a>
       <a href="/configure" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></svg><span class="nav-label">Configure</span></a>
@@ -267,7 +267,7 @@
 
       <section class="page-head" aria-labelledby="hero-h">
         <div>
-          <p class="eyebrow" id="heroEyebrow">Nuvio Live Sports setup</p>
+          <p class="eyebrow" id="heroEyebrow">FUTUFCTV setup</p>
           <h1 id="hero-h">Configure your sports experience</h1>
           <p class="lede">Pick the sports and stream sources you want, set your timezone, then install the add-on.</p>
         </div>
@@ -1523,7 +1523,7 @@
         segButtons.forEach(b => b.setAttribute('aria-checked', String(b.dataset.mode === mode)));
         panels.forEach((p, i) => p && p.classList.toggle('is-current', mode === 'wizard' && i === step));
         if (support) support.classList.toggle('is-current', mode === 'wizard' && step === last);
-        if (eyebrow) eyebrow.textContent = mode === 'wizard' ? 'Step ' + (step + 1) + ' of ' + ORDER.length : 'Nuvio Live Sports setup';
+        if (eyebrow) eyebrow.textContent = mode === 'wizard' ? 'Step ' + (step + 1) + ' of ' + ORDER.length : 'FUTUFCTV setup';
         if (mode === 'wizard') {
           links.forEach((a, i) => { if (i === step) a.setAttribute('aria-current', 'location'); else a.removeAttribute('aria-current'); });
           if (back) back.disabled = step === 0;
